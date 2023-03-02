@@ -1,0 +1,399 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Shadows+Into+Light&family=Shantell+Sans:ital,wght@1,600&display=swap');
+
+
+body{
+    background-color: #FEF5E7 ;
+   
+}
+
+/* NAVBAR RESPONSIVE*/
+
+header, .container-fluid{
+    background-color: #85C1E9;
+    position: fixed;
+    top: 0px;
+
+}
+.navbar-brand{
+    color: azure;
+}
+.logo a{
+    font-size: 36px;
+    color: #f68428;
+    text-decoration: none; 
+    font-family: 'Shadows Into Light', cursive;
+}
+
+ .nav a {
+	color:#fff;
+	text-decoration: none;
+}
+.nav a:hover{
+    color: #0e5489;
+}
+
+/* HEADER SIN BOOTSTRAP ////
+
+header{
+    height: 60px;
+    background-color: #85C1E9 ;
+    overflow: hidden;
+    color:azure;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.nav{
+    width: 60%;
+   
+}
+
+ nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header nav ul li {
+   margin: 15px;
+   
+}
+
+*/
+
+
+/* SECCION INICIO*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.493), rgba(30, 35, 38, 0.833)),
+    url("https://media.istockphoto.com/id/489833698/es/foto/dos-tumbonas-en-la-carpa-en-la-playa.jpg?s=612x612&w=0&k=20&c=n3MHN6jRt4_ynBcTyQVZYO2lnBWG3GsZAYTBsjWb_j4=");
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenedorInicio{
+    padding: 20px;
+    margin: auto;
+    text-align: center;   
+}
+
+.inicio .contenedorInicio h1{
+    padding: 15px;
+    margin: 15px;
+    font-size: 60px;
+}
+.inicio .contenedorInicio p{
+    margin: 20px;
+    padding: 10px;
+}
+.botonInicio{ color: rgb(255, 255, 255); font-size: 26px; line-height: 26px; padding: 6px; border-radius: 10px; font-family: "Trebuchet MS", Helvetica, sans-serif; font-weight: 700; text-decoration: none solid; font-style: italic; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(246, 132, 40) 0%, rgb(203, 101, 20) 56%, rgb(166, 79, 18) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid; display: inline-block;}
+.botonInicio:hover {
+background: #F68428; }
+.botonInicio:active {
+background: #A64F12; }
+
+.redes{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.redes a{
+    color: #2980B9;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #5499C7;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.redes a:hover{
+    background-color: #85C1E9;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* SECCION NUESTROS SERVICIOS*/
+
+#carouselExampleCaptions{
+    margin-top: 40px;
+    padding: 0 20px;
+    height: 1000px;
+
+}
+.carousel-caption{
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.493), rgba(30, 35, 38, 0.833)); 
+}
+.descripcionServ {
+    text-align: center;
+    margin: 15px;
+    display: block;
+}
+.titServicios{
+    margin-top: 100px;
+}
+
+
+/* SECCION OFERTAS */
+
+.promoPresentacion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 15px;
+}
+
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedorPromo, .servicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+   
+}
+.precioPromo{
+    margin-left: 20px ;
+}
+
+/* SECCION GALERIA*/
+
+
+.h3-hotel{
+    grid-area: tit;
+}
+.destinos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+ .titGaleria{
+    font-size: 30px;color: #f68428;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight:400;
+    font-style:normal
+    }   
+
+
+.galeria {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  div.galeria:hover{
+    background-color: #85C1E9;
+    color: #fff;
+  }
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+   .titGaleria{
+    margin-top: 100px;
+   }
+
+   .galeria a{
+    text-decoration: none;
+    color: black;
+}
+.galeriaMexico h3{
+    padding: 20px;
+    margin-top: 40px;
+    color: #F68428;
+}
+
+.galeriaCompleta{
+    margin: 50px;
+}
+
+.contenedor-galeria{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.item-galeria:nth-child(1){
+    grid-row-start: span 3;
+    grid-column-start: span 2;
+}
+.item-galeria:nth-child(2){
+    grid-row-start: span 2;
+}
+.item-galeria:nth-child(4){
+    grid-row-start: span 2;
+}
+.item-galeria:nth-child(6){
+    grid-column-start: span 2; 
+}
+
+
+@media screen and (max-width: 1024px){
+    .contenedor-galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .item-galeria:nth-child(1){
+        grid-row-start: span 2 ;
+        grid-column-start: span 2;
+    }
+    .item-galeria:nth-child(2){
+        grid-row-start: span 1;
+    }
+    .item-galeria:nth-child(4){
+        grid-row-start: span 2;
+    }
+
+    .item-galeria:nth-child(6){
+        grid-column-start: span 2; 
+        grid-row-start: span 2; 
+    }
+    .item-galeria:nth-child(9){
+        grid-row-start: span 2; 
+    }
+
+}
+@media screen and (max-width: 768px){
+    .contenedor-galeria {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+    .item-galeria:nth-child(4){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    .item-galeria:nth-child(7){
+        grid-row-start: span 2; 
+    }
+    .item-galeria:nth-child(5){
+        grid-column-start: span 2;
+    }
+}
+
+
+*/
+
+/* SECCION FORMULARIO */
+.bodyForm{
+    background-image: url(https://marketplace.canva.com/Tem-o/MAE0IQTem-o/1/s2/canva-sin-t%C3%ADtulo-MAE0IQTem-o.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-color: rgb(69, 182, 235);
+    color: rgb(255, 255, 255);
+    font-size: 1.2vw;
+    background-repeat: no-repeat;
+}
+
+#heading {
+    max-width: 750px;
+    margin: 4rem auto;
+    padding: 0.6rem;
+}
+#heading h1{
+    color:#035284;
+}
+#principal-form{
+    padding: 0% 20%;
+}
+#form{
+    background-color: rgba(34, 34, 66, 0.365);
+    padding: 3rem 2.5rem;
+    border-radius: 7px;    
+}
+.form{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+#submit{
+    color: rgb(255, 255, 255);
+    font-size: 1.15rem;
+    background: rgb(34, 216, 125);
+    padding: 0.7rem;
+}
+
+
+/* FOOTER */
+footer {
+    background: #85C1E9;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+    padding: 30px;
+
+}
+
+
