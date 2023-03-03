@@ -4,8 +4,6 @@
     padding: 0;
     margin: 0;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Shadows+Into+Light&family=Shantell+Sans:ital,wght@1,600&display=swap');
-
 
 body{
     background-color: #FEF5E7 ;
@@ -16,9 +14,6 @@ body{
 
 header, .container-fluid{
     background-color: #85C1E9;
-    position: fixed;
-    top: 0px;
-
 }
 .navbar-brand{
     color: azure;
@@ -38,50 +33,6 @@ header, .container-fluid{
     color: #0e5489;
 }
 
-/* HEADER SIN BOOTSTRAP ////
-
-header{
-    height: 60px;
-    background-color: #85C1E9 ;
-    overflow: hidden;
-    color:azure;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    
-}
-
-.contenedor{
-    display: flex;
-    width: 100%;
-    margin: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.nav{
-    width: 60%;
-   
-}
-
- nav ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-header nav ul li {
-   margin: 15px;
-   
-}
-
-*/
-
-
 /* SECCION INICIO*/
 
 .inicio{
@@ -92,6 +43,8 @@ header nav ul li {
     color: #fff;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .inicio .contenedorInicio{
     padding: 20px;
@@ -143,24 +96,46 @@ background: #A64F12; }
 /* SECCION NUESTROS SERVICIOS*/
 
 #carouselExampleCaptions{
-    margin-top: 40px;
     padding: 0 20px;
-    height: 1000px;
+    object-fit: cover;
 
 }
 .carousel-caption{
-    background: linear-gradient(to top, rgba(30, 35, 38, 0.493), rgba(30, 35, 38, 0.833)); 
+    background: linear-gradient(rgba(255,255,255,0.3), rgb(0,0,0,1));
 }
-.descripcionServ {
-    text-align: center;
-    margin: 15px;
-    display: block;
+.nuestrosServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
 }
-.titServicios{
-    margin-top: 100px;
+.servicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+   
 }
-
-
+.descripcion-Serv{
+    margin: 20px;
+    padding: 20px;
+}
+@media screen and (max-width: 1024px){
+    .servicio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .descripcion-Serv{
+        text-align: center;
+    }
+    #servicio{
+        flex-direction: column-reverse;
+    }   
+}
 /* SECCION OFERTAS */
 
 .promoPresentacion{
@@ -179,8 +154,7 @@ background: #A64F12; }
     flex-wrap: wrap;
     justify-content: center;
 }
-.contenedorPromo, .servicio{
-    display: flex;
+.contenedorPromo{
     flex-direction: row;
     flex-wrap: nowrap;
 
@@ -323,8 +297,6 @@ background: #A64F12; }
     }
 }
 
-
-*/
 
 /* SECCION FORMULARIO */
 .bodyForm{
