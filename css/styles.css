@@ -88,8 +88,6 @@ background: #A64F12;
     color: #fff;
 }
 
-
-
 .redes{
     text-align: center;
     margin: 20px;
@@ -381,6 +379,11 @@ background: #A64F12;
     padding: 0% 20%;
     display: flex;
     justify-content: center;
+}
+@media screen and (max-width: 1024px){
+    #principal-form{
+        padding: 0% 10px;
+    }      
 }
 #form{
     background-color: rgba(34, 34, 66, 0.365);
