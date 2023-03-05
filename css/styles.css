@@ -63,7 +63,21 @@ header, .container-fluid{
     margin: 20px;
     padding: 10px;
 }
-.botonInicio{ color: rgb(255, 255, 255); font-size: 26px; line-height: 26px; padding: 6px; border-radius: 10px; font-family: "Trebuchet MS", Helvetica, sans-serif; font-weight: 700; text-decoration: none solid; font-style: italic; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(246, 132, 40) 0%, rgb(203, 101, 20) 56%, rgb(166, 79, 18) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid; display: inline-block;}
+.botonInicio{ color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    line-height: 26px; padding: 6px;
+    border-radius: 10px; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-weight: 600; 
+    text-decoration: none solid; 
+    font-style: italic;
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(246, 132, 40) 0%, rgb(203, 101, 20) 56%, rgb(166, 79, 18) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    border: 2px solid; 
+    display: inline-block;
+}
 .botonInicio:hover {
 background: #F68428; }
 .botonInicio:active {
@@ -71,7 +85,7 @@ background: #A64F12;
 }
 .contenedorInicio a{
     text-decoration: none;
-    color: #0e5489;
+    color: #fff;
 }
 
 
@@ -164,14 +178,28 @@ background: #A64F12;
     justify-content: center;
 }
 .contenedorPromo{
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
     margin: 30px;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #eee;
-   
+    background-color: #eee;   
+}
+@media screen and (max-width: 768px){
+    .contenedorPromo{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .promoPresentacion img{
+        width: 80%;
+    
+    }  
+    
+}
+.descripcionPromo{
+    margin: 20px;
+    padding: 20px;
 }
 .precioPromo{
     margin-left: 20px ;
@@ -342,10 +370,12 @@ background: #A64F12;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 #heading h1{
     color:#035284;
     font-family: 'Shadows Into Light', cursive;
+
 }
 #principal-form{
     padding: 0% 20%;
