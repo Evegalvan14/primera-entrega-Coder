@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Shadows+Into+Light&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -22,7 +25,6 @@ header, .container-fluid{
     font-size: 36px;
     color: #f68428;
     text-decoration: none; 
-    font-family: 'Shadows Into Light', cursive;
 }
 
  .nav a {
@@ -65,7 +67,14 @@ header, .container-fluid{
 .botonInicio:hover {
 background: #F68428; }
 .botonInicio:active {
-background: #A64F12; }
+background: #A64F12; 
+}
+.contenedorInicio a{
+    text-decoration: none;
+    color: #0e5489;
+}
+
+
 
 .redes{
     text-align: center;
@@ -177,20 +186,32 @@ background: #A64F12; }
 .destinos{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
+    flex-wrap: nowrap;
+   justify-content: center;
 }
 
+@media screen and (max-width: 1024px){
+    .destinos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
- .titGaleria{
+ .titGaleria, .mexico h3, .republicaDominicana h3, .bahamas h3{
     font-size: 30px;color: #f68428;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
     font-weight:400;
-    font-style:normal
+    font-style:normal;
+    margin-top: 100px;
+    font-family: 'Shadows Into Light', cursive
     }   
+ .titGaleria{
+        margin-top: 50px;
+    }
+ .mexico h4, .republicaDominicana h4, .bahamas h4{
+    margin: 30px;
+ }
 
 
 .galeria {
@@ -212,9 +233,6 @@ background: #A64F12; }
     height: auto;
   }
   
-   .titGaleria{
-    margin-top: 100px;
-   }
 
    .galeria a{
     text-decoration: none;
@@ -255,6 +273,13 @@ background: #A64F12; }
 .item-galeria:nth-child(6){
     grid-column-start: span 2; 
 }
+.item-galeria:nth-child(13){
+    grid-column-start: span 2; 
+}
+.item-galeria:nth-child(15){
+    grid-column-start: span 2; 
+}
+
 
 
 @media screen and (max-width: 1024px){
@@ -284,6 +309,7 @@ background: #A64F12; }
 @media screen and (max-width: 768px){
     .contenedor-galeria {
         grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
     } 
     .item-galeria:nth-child(4){
         grid-column-start: span 1;
@@ -311,15 +337,21 @@ background: #A64F12; }
 }
 
 #heading {
-    max-width: 750px;
+    max-width: 700px;
     margin: 4rem auto;
     padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #heading h1{
     color:#035284;
+    font-family: 'Shadows Into Light', cursive;
 }
 #principal-form{
     padding: 0% 20%;
+    display: flex;
+    justify-content: center;
 }
 #form{
     background-color: rgba(34, 34, 66, 0.365);
