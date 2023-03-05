@@ -36,6 +36,10 @@ header, .container-fluid{
 }
 
 /* SECCION INICIO*/
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 .inicio{
     background: linear-gradient(to top, rgba(30, 35, 38, 0.493), rgba(30, 35, 38, 0.833)),
@@ -48,6 +52,7 @@ header, .container-fluid{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .inicio .contenedorInicio{
     padding: 20px;
     margin: auto;
@@ -59,11 +64,14 @@ header, .container-fluid{
     margin: 15px;
     font-size: 60px;
 }
+
 .inicio .contenedorInicio p{
     margin: 20px;
     padding: 10px;
 }
-.botonInicio{ color: rgb(255, 255, 255); 
+
+.botonInicio{
+    color: rgb(255, 255, 255); 
     font-size: 20px; 
     line-height: 26px; padding: 6px;
     border-radius: 10px; 
@@ -112,7 +120,19 @@ background: #A64F12;
     color: #fff;
     border: 1px solid #fff;
 }
-
+@media screen and (max-width: 500px){
+    .inicio{
+        height: auto;
+    }
+    .contenedorInicio h1{
+        padding: 10px;
+        margin: 10px;
+        font-size: 40px !important;
+    }
+    .inicio .contenedorInicio p, .contenedorInicio a, .redes {
+        font-size: 15px!important;
+    }
+}
 
 /* SECCION NUESTROS SERVICIOS*/
 
