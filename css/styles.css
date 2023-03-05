@@ -157,6 +157,11 @@ background: #A64F12;
         flex-direction: column-reverse;
     }   
 }
+.descripcion-Serv h4{
+    color:#035284;
+    
+}
+
 /* SECCION OFERTAS */
 
 .promoPresentacion{
